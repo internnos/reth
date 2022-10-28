@@ -32,6 +32,7 @@ impl Tx {
     }
     pub fn reward(self) -> Self {
         Tx {
+            from: Account { address: (String::from("vitalik.eth")) },
             data: String::from("reward"),
             ..self
         }
