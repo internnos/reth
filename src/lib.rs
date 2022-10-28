@@ -1,6 +1,6 @@
-#[derive(Debug)]
+#[derive(Debug, PartialEq, PartialOrd)]
 pub struct Account {
-    address: String,
+    pub address: String,
 }
 
 
@@ -12,12 +12,12 @@ impl Account {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq, PartialOrd)]
 pub struct Tx {
-    from: Account,
-    to: Account,
-    value: u64,
-    data: String,
+    pub from: Account,
+    pub to: Account,
+    pub value: u64,
+    pub data: String,
 }
 
 
